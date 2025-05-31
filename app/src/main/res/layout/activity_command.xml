@@ -8,8 +8,6 @@
     android:padding="20dp"
     android:gravity="center_vertical">
 
-    <!-- Reduced from 50dp to 12dp for top space -->
-
     <View
         android:layout_width="match_parent"
         android:layout_height="10dp" />
@@ -135,7 +133,6 @@
         android:gravity="center"
         android:layout_marginTop="20dp" />
 
-    <!-- Reduced bottom space -->
     <View
         android:layout_width="match_parent"
         android:layout_height="60dp" />

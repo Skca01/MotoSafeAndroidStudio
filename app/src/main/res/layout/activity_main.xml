@@ -38,7 +38,7 @@
             android:contentDescription="Settings" />
     </LinearLayout>
 
-    <!-- Rest of the layout remains the same as the original -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,7 +69,6 @@
             android:paddingEnd="20dp" />
     </LinearLayout>
 
-    <!-- Remaining layout components from the original XML remain unchanged -->
     <TextView
         android:id="@+id/trackingStatus"
         android:layout_width="match_parent"
