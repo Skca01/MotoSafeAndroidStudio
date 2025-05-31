@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         Button commandButton = findViewById(R.id.commandButton);
         Button clearTrackButton = findViewById(R.id.clearTrackButton);
 
-        // Add settings button
+        //Settings button
         ImageButton settingsButton = findViewById(R.id.settingsButton);
 
         // Initialize tracking path and points list
