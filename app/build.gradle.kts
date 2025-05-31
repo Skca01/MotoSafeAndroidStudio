@@ -32,16 +32,13 @@ android {
 }
 
 dependencies {
-    // Existing dependencies
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
 
-    // Add osmdroid library
     implementation("org.osmdroid:osmdroid-android:6.1.16")
 
-    // Optional: Add Apache Commons IO (often used with osmdroid)
     implementation("commons-io:commons-io:2.11.0")
 
     testImplementation(libs.junit)
