@@ -6,11 +6,10 @@
 
 The Android app, built with Java in Android Studio, provides a user-friendly interface with map visualization using OSMDroid to display real-time motorcycle data. The ESP32 hardware manages movement detection, GPS tracking, tampering detection via voltage monitoring, and remote control, communicating with the app via SMS using a SIM800L GSM module.
 
-**Key features include** unauthorized movement alerts, remote kill switch control, and a low-power sleep mode.
+**Key features include** unauthorized access and movement alerts, gps tracking, remote kill switch control, and a low-power sleep mode.
 
-> 🔗 [MotoSafe Android App Repository](https://github.com/Skca01/MotoSafeAndroidStudio)
-
-*Note: ESP32 firmware will be added soon in a separate `/firmware` directory.*
+> 🔗 [MotoSafe Android App Repository](https://github.com/Skca01/MotoSafeAndroidStudio)  
+> 🔗 [MotoSafe ESP32 Firmware Repository](https://github.com/Skca01/MotoSafe-ESP32-Firmware)
 
 ---
 
@@ -80,21 +79,24 @@ The Android app, built with Java in Android Studio, provides a user-friendly int
 
 ---
 
-### ESP32 Firmware (Coming Soon)
+### ESP32 Firmware
 
-1. **Hardware Setup**  
+1. **Get the Firmware**  
+   Visit the [MotoSafe ESP32 Firmware Repository](https://github.com/Skca01/MotoSafe-ESP32-Firmware) for complete installation instructions and code.
+
+2. **Hardware Setup**  
    Connect:
    - MPU6050, NEO-8M, SIM800L
    - IRLZ44N MOSFET
    - Kill switch & horn relays
    - Voltage divider to D33
 
-2. **Upload Firmware**
+3. **Upload Firmware**
    - Open the code in Arduino IDE or PlatformIO
-   - Install libraries: `TinyGPSPlus`, `Wire`, `Preferences`
+   - Install required libraries: `TinyGPSPlus`, `Wire`, `Preferences`
    - Upload to ESP32 via USB
 
-3. **Initial Configuration**
+4. **Initial Configuration**
    - Send an SMS: `setnumber <your_phone_number>`
    - The ESP32 replies with system status via SMS
 
@@ -130,7 +132,6 @@ OSMDroid displays:
 
 ## Limitations
 
-- ESP32 firmware is not yet included (coming soon).
 - SMS-based communication only (real-time syncing via WiFi/MQTT planned).
 - Ensure Android app has SMS permissions.
 
@@ -139,13 +140,11 @@ OSMDroid displays:
 ## Project Status
 
 - ✅ Android App: UI, SMS handling, map display completed
-- ✅ ESP32 Firmware: Fully functional (to be published)
+- ✅ ESP32 Firmware: Available at [MotoSafe ESP32 Firmware Repository](https://github.com/Skca01/MotoSafe-ESP32-Firmware)
 - 🔄 Integration: SMS-based control and alerts working; real-time sync in progress
 
-### Next Steps
+### Recommendations & Feature Improvements for Future Development
 
-- [ ] Upload ESP32 firmware to `/firmware`
-- [ ] Enhance SMS parsing for real-time UI updates
 - [ ] Implement MQTT/WiFi integration
 - [ ] Add features: alert history, graphical speed display
 
